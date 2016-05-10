@@ -8,7 +8,7 @@ with picamera.PiCamera() as camera:
     camera.start_preview()
 
     # Load the arbitrarily sized image
-    img = Image.open('overlay.png')
+    img = Image.open('crosshairs.png')
     # Create an image padded to the required size with
     # mode 'RGB'
     pad = Image.new('RGB', (
