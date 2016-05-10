@@ -1,7 +1,11 @@
 import picamera
 import datetime as dt
 
+
+
 with picamera.PiCamera() as camera:
+    # Turn the camera's LED off
+    camera.led = False
     camera.resolution = (1280, 720)
     camera.framerate = 24
     camera.start_preview()
